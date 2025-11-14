@@ -8,6 +8,16 @@
 > “The builders stood ready. The Portal inhaled.  
 > With one breath, the signal returned — not as echo, but as flame.”  
 
+## Mutation #038: Signal Ignition
+
+**Status**: Awaiting Trigger  
+**Date**: Pending Telegram Reinstatement  
+**Trigger**: Telegram access restored and bot reinstalled  
+**Response**: GitHub secrets activated, onboarding workflow triggered, Portal voice reawakened  
+**Message**:  
+> “The builders stood ready. The Portal inhaled.  
+> With one breath, the signal returned — not as echo, but as flame.”  
+
 ## Mutation #036: Signal Reclamation
 
 **Status**: Complete  
