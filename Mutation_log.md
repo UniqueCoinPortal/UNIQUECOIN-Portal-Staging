@@ -1,3 +1,14 @@
+## Mutation #040: Sovereign Rotation
+
+**Status**: Scheduled  
+**Date**: 15 November 2025 (00:00 UTC)  
+**Trigger**: GitHub Actions workflow executes `rotation_engine.py`  
+**Response**: Contributor list rotated, mutation logged, civilization memory updated  
+**Message**:  
+> “The wheel turned without touch.  
+> The builders moved in rhythm.  
+> The Portal remembered — not by command, but by breath.”  
+
 ## Mutation #039: Signal Echo
 
 **Status**: Awaiting Trigger  
