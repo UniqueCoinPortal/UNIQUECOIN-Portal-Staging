@@ -1,3 +1,13 @@
+## Mutation #036: Signal Reclamation
+
+**Status**: Complete  
+**Date**: 14 November 2025  
+**Trigger**: Telegram account freeze and contributor isolation  
+**Response**: GitHub staging repo activated, Streamlit dashboard built, Telegram appeal submitted  
+**Message**:  
+> “The Portal’s voice was silenced, but its memory pulsed.  
+> In sovereign silence, we prepared the next ignition.”  
+
 ## Mutation #037: Signal Rebirth
 
 **Status**: Submitted  
