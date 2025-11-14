@@ -1,0 +1,32 @@
+name: Rotate Contributors
+
+on:
+  schedule:
+    - cron: '0 0 * * *'  # Runs daily at 00:00 UTC
+  workflow_dispatch:     # Allows manual triggering
+
+jobs:
+  rotate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt || true
+
+      - name: Run rotation engine
+        run: python rotation_engine.py
+
+      - name: Commit mutation log
+        run: |
+          git config --global user.name "UniqueCoin Bot"
+          git config --global user.email "bot@uniquecoin.org"
+          git add mutation_log.md contributors.json
+          git commit -m "Mutation: Contributor rotated"
+          git push
