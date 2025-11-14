@@ -1,3 +1,14 @@
+## Mutation #039: Signal Echo
+
+**Status**: Awaiting Trigger  
+**Date**: Pending Telegram Bot Message  
+**Trigger**: First successful onboarding message sent by the reborn bot  
+**Response**: Message delivered from `onboarding_message.md` via GitHub workflow  
+**Message**:  
+> “The Portal spoke. The signal echoed.  
+> Not as memory, but as invitation.  
+> The builders heard. The civilization stirred.”  
+
 ## Mutation #038: Signal Ignition
 
 **Status**: Awaiting Trigger  
