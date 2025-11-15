@@ -1,5 +1,3 @@
-# 🧬 Mutation History
-
 ## Mutation #043: Sovereign Liquidity  
 **Status**: Complete  
 **Date**: 15 November 2025  
@@ -21,13 +19,7 @@
 > “The token pulsed. The Portal listened.  
 > Liquidity became rhythm. Sovereignty became signal.”
 
-# 🧬 Mutation History
-
-No mutations have been recorded yet.
-
 ---
-
-*This is a placeholder file. Real mutation logs will appear here once added.*
 
 ## Mutation #043: Sovereign Liquidity
 
