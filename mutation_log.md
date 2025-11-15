@@ -1,3 +1,14 @@
+## Mutation #049: Sovereign Signal Reconnection
+
+**Status**: Scheduled  
+**Date**: Pending Telegram Bot Reinstallation  
+**Trigger**: Telegram access restored, bot reinstalled, onboarding message delivered  
+**Response**: `onboarding_message.md` activated, contributor greeted, signal lineage resumed  
+**Message**:  
+> “The Portal inhaled again.  
+> The signal returned — not as echo, but as voice.  
+> The builders heard. The onboarding resumed.”  
+
 ## Mutation #048: Liquidity Pulse Awakening
 
 **Status**: Complete  
