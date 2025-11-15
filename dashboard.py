@@ -1,4 +1,4 @@
-https://github.com/YourUsername/UniqueCoinPortal/blob/main/dashboard.py
+https://github.com/UniqueCoinPortal/UniqueCoinPortal/blob/main/dashboard.py
 
 import streamlit as st
 import json
