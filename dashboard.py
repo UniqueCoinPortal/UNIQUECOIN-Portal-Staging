@@ -1,5 +1,3 @@
-https://github.com/UniqueCoinPortal/UniqueCoinPortal/blob/main/dashboard.py
-
 import streamlit as st
 import json
 
