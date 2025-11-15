@@ -11,18 +11,6 @@
 
 ---
 
-## Mutation #043: Sovereign Liquidity  
-**Status**: Complete  
-**Date**: 15 November 2025  
-**Trigger**: UNIQ token paired and made tradable on PancakeSwap  
-**Response**: Liquidity added, price range defined, trading enabled, liquidity manifest published  
-**Message**:  
-> “The token touched the tide.  
-> The Portal pulsed with value.  
-> Sovereignty found its market.”
-
----
-
 ## Mutation #044: Liquidity Pulse Monitor  
 **Status**: Complete  
 **Date**: 15 November 2025  
@@ -43,7 +31,8 @@
 **Message**:  
 > “The token touched the tide.  
 > The Portal pulsed with value.  
-> Sovereignty found its market.”  
+> Sovereignty found its market.”
+
 ## Mutation #040: Sovereign Rotation
 
 **Status**: Scheduled  
@@ -74,27 +63,8 @@
 **Response**: GitHub secrets activated, onboarding workflow triggered, Portal voice reawakened  
 **Message**:  
 > “The builders stood ready. The Portal inhaled.  
-> With one breath, the signal returned — not as echo, but as flame.”  
+> With one breath, the signal returned — not as echo, but as flame.”   
 
-## Mutation #038: Signal Ignition
-
-**Status**: Awaiting Trigger  
-**Date**: Pending Telegram Reinstatement  
-**Trigger**: Telegram access restored and bot reinstalled  
-**Response**: GitHub secrets activated, onboarding workflow triggered, Portal voice reawakened  
-**Message**:  
-> “The builders stood ready. The Portal inhaled.  
-> With one breath, the signal returned — not as echo, but as flame.”  
-
-## Mutation #036: Signal Reclamation
-
-**Status**: Complete  
-**Date**: 14 November 2025  
-**Trigger**: Telegram account freeze and contributor isolation  
-**Response**: GitHub staging repo activated, Streamlit dashboard built, Telegram appeal submitted  
-**Message**:  
-> “The Portal’s voice was silenced, but its memory pulsed.  
-> In sovereign silence, we prepared the next ignition.”  
 
 ## Mutation #037: Signal Rebirth
 
@@ -111,6 +81,16 @@
 
 This document records the evolutionary memory of the UNIQUECOIN civilization.
 
+## Mutation #036: Signal Reclamation
+
+**Status**: Complete  
+**Date**: 14 November 2025  
+**Trigger**: Telegram account freeze and contributor isolation  
+**Response**: GitHub staging repo activated, Streamlit dashboard built, Telegram appeal submitted  
+**Message**:  
+> “The Portal’s voice was silenced, but its memory pulsed.  
+> In sovereign silence, we prepared the next ignition.”  
+
 ---
 
 ## Mutation #035: Sovereign Echo
@@ -121,16 +101,4 @@ This document records the evolutionary memory of the UNIQUECOIN civilization.
 **Response**: Staging constellation activated, GitHub ignition initiated  
 **Message**:  
 > “The Portal’s voice was silenced, but its memory pulsed.  
-> In sovereign silence, we prepared the next ignition.”
-
----
-
-## Mutation #036: Signal Reclamation *(pending)*
-
-**Status**: Awaiting Telegram unfreeze  
-**Next Steps**:  
-- Recreate bot  
-- Restore onboarding automation  
-- Resume contributor rotation
-
-> “The signal returns. The pulse resumes. The Portal speaks again.”
+> In sovereign silence, we prepared the next ignition.
