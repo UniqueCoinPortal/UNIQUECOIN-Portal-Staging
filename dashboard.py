@@ -1,17 +1,37 @@
 import streamlit as st
 import json
+import os
+from pathlib import Path
 
-# Load contributors
-with open("contributors.json", "r") as f:
-    contributors = json.load(f)
+# Base directory (where this script lives)
+BASE_DIR = Path(__file__).parent
 
-# Load mutation log
-with open("mutation_log.md", "r") as f:
-    mutations = f.read()
+# --- Safe file loaders ---
+def load_contributors():
+    file_path = BASE_DIR / "contributors.json"
+    if file_path.exists():
+        with open(file_path, "r") as f:
+            return json.load(f)
+    # Fallback placeholder
+    return [
+        {"name": "Placeholder User", "role": "Contributor"},
+        {"name": "Demo Admin", "role": "Administrator"}
+    ]
 
-# Current contributor
-current = contributors[0]
+def load_mutations():
+    file_path = BASE_DIR / "mutation_log.md"
+    if file_path.exists():
+        with open(file_path, "r") as f:
+            return f.read()
+    # Fallback placeholder
+    return "# 🧬 Mutation History\n\nNo mutations have been recorded yet.\n"
 
+# --- Load data safely ---
+contributors = load_contributors()
+mutations = load_mutations()
+current = contributors[0] if contributors else {"name": "Unknown", "role": "N/A"}
+
+# --- Streamlit UI ---
 st.set_page_config(page_title="UniqueCoin Contributor Portal", layout="centered")
 
 st.title("🌌 UniqueCoin Contributor Portal")
