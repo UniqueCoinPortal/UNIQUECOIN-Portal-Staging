@@ -1,3 +1,11 @@
+# 🧬 Mutation History
+
+No mutations have been recorded yet.
+
+---
+
+*This is a placeholder file. Real mutation logs will appear here once added.*
+
 ## Mutation #043: Sovereign Liquidity
 
 **Status**: Complete  
