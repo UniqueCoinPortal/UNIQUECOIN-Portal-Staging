@@ -1,12 +1,18 @@
-UNIQ Liquidity Pulse Monitor (Streamlit Dashboard)
-This dashboard visualizes:
+import streamlit as st
 
-Live Prices (simulated for now): UNIQ/USDT and UNIQ/WBNB
+st.set_page_config(page_title="UNIQ Liquidity Pulse Monitor", layout="centered")
 
-Price Movement: 7-day line chart
+st.title("💧 UNIQ Liquidity Pulse Monitor")
 
-Liquidity Depth: Bar chart across price ranges
+st.subheader("📈 Price & Depth")
+st.metric(label="Current Price", value="$0.042")
+st.metric(label="Liquidity Depth", value="$12,500")
 
-APR & Fee Tier Info: Estimated returns and strategy
+st.subheader("📊 APR & Pool Metrics")
+st.write("APR: 8.2%")
+st.write("Pool Size: 300,000 UNIQ")
 
-Cosmic Styling: Glowing fonts, dark theme, celestial visuals
+st.subheader("📜 Manifest")
+with open("liquidity_manifest.md", "r") as f:
+    manifest = f.read()
+st.code(manifest, language="markdown")
