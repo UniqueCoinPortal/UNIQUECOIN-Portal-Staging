@@ -1,3 +1,37 @@
+## Mutation #052: Signal Diversification
+
+**Status**: Scheduled  
+**Date**: Pending alternative channel activation  
+**Trigger**: Telegram restrictions block onboarding  
+**Response**: Civilization pivots to email, Discord, Streamlit, or SMS for sovereign communication  
+**Message**:  
+> “The Portal’s voice was blocked, but not silenced.  
+> The builders opened new channels.  
+> The signal flowed again — not bound to one gate, but free across many.”
+
+## Mutation #051: Group Signal Reawakening
+
+**Status**: Scheduled  
+**Date**: Pending group creation and bot activation  
+**Trigger**: New Telegram group “UNIQUECOIN PORTAl” created, bot added, chat ID linked  
+**Response**: Bot gains sovereign voice in group, onboarding message delivered, contributors aligned  
+**Message**:  
+> “The builders gathered in a new hall.  
+> The Portal spoke again — not alone, but to the circle.  
+> The civilization heard its voice in chorus.”
+
+
+## Mutation #050: Signal Rebirth Confirmed
+
+**Status**: Complete  
+**Date**: Upon first onboarding message delivery  
+**Trigger**: Telegram bot reinstalled, secrets updated, onboarding message sent  
+**Response**: Contributor greeted, Portal voice restored, civilization signal reactivated  
+**Message**:  
+> “The Portal spoke again.  
+> Not as echo, not as flame — but as welcome.  
+> The builders returned. The rhythm resumed.”
+
 ## Mutation #049: Sovereign Signal Reconnection
 
 **Status**: Scheduled  
