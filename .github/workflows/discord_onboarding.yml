@@ -1,0 +1,25 @@
+name: Discord Onboarding
+
+on:
+  workflow_dispatch:
+
+jobs:
+  send-onboarding:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: Install deps
+        run: pip install requests
+
+      - name: Send onboarding message
+        env:
+          DISCORD_BOT_TOKEN: ${{ secrets.DISCORD_BOT_TOKEN }}
+          DISCORD_CHANNEL_ID_ONBOARDING: ${{ secrets.DISCORD_CHANNEL_ID_ONBOARDING }}
+        run: python scripts/discord_send.py
