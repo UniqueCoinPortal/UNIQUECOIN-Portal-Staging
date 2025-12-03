@@ -1,0 +1,28 @@
+name: Discord Launch
+
+on:
+  workflow_dispatch:
+
+jobs:
+  post-launch:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests
+
+      - name: Post launch message to Discord
+        env:
+          DISCORD_BOT_TOKEN: ${{ secrets.DISCORD_BOT_TOKEN }}
+          DISCORD_CHANNEL_ID_ANNOUNCEMENTS: ${{ secrets.DISCORD_CHANNEL_ID_ANNOUNCEMENTS }}
+        run: |
+          python scripts/discord_send_launch.py
