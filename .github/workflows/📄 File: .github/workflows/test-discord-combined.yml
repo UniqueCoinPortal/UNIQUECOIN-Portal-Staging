@@ -1,0 +1,22 @@
+name: Discord Combined Test
+
+on:
+  workflow_dispatch:
+
+jobs:
+  send-messages:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send test message to Onboarding
+        run: |
+          curl -X POST "https://discord.com/api/v9/channels/${{ secrets.DISCORD_CHANNEL_ID_ONBOARDING }}/messages" \
+          -H "Authorization: Bot ${{ secrets.DISCORD_BOT_TOKEN }}" \
+          -H "Content-Type: application/json" \
+          -d '{"content":"👋 Hello from UNIQUECOIN BOT — the hall is alive in #onboarding!"}'
+
+      - name: Send test message to Announcements
+        run: |
+          curl -X POST "https://discord.com/api/v9/channels/${{ secrets.DISCORD_CHANNEL_ID_ANNOUNCEMENTS }}/messages" \
+          -H "Authorization: Bot ${{ secrets.DISCORD_BOT_TOKEN }}" \
+          -H "Content-Type: application/json" \
+          -d '{"content":"📢 UNIQUECOIN BOT Announcement: The signal is alive in #announcements!"}'
