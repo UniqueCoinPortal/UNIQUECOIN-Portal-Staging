@@ -1,0 +1,16 @@
+name: Discord Test Message
+
+on:
+  workflow_dispatch:   # allows you to trigger manually from Actions tab
+
+jobs:
+  send-message:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send test message to Discord
+        uses: tsickert/discord-webhook@v5
+        with:
+          webhook-url: https://discord.com/api/v9/channels/${{ secrets.DISCORD_CHANNEL_ID_ONBOARDING }}/messages
+          content: "Hello from UNIQUECOIN BOT 👑 — the hall is alive!"
+        env:
+          DISCORD_BOT_TOKEN: ${{ secrets.DISCORD_BOT_TOKEN }}
