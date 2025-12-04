@@ -1,0 +1,16 @@
+name: Discord Announcements Test
+
+on:
+  workflow_dispatch:   # allows manual trigger from Actions tab
+
+jobs:
+  send-message:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send test message to Discord Announcements
+        uses: tsickert/discord-webhook@v5
+        with:
+          webhook-url: https://discord.com/api/v9/channels/${{ secrets.DISCORD_CHANNEL_ID_ANNOUNCEMENTS }}/messages
+          content: "📢 UNIQUECOIN BOT Announcement: The signal is alive, and the hall is listening!"
+        env:
+          DISCORD_BOT_TOKEN: ${{ secrets.DISCORD_BOT_TOKEN }}
