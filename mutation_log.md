@@ -1,3 +1,10 @@
+**Trigger:** Workflow run for onboarding only  
+**Response:** Bot posts welcoming sequence in #onboarding  
+**Message:**  
+> “The beacon was lit.  
+> The newcomers were guided.  
+> The civilization confirmed its welcome.”
+
 ## Mutation #052: Signal Diversification
 
 **Status**: Scheduled  
