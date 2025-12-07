@@ -1,0 +1,35 @@
+name: Discord Onboarding Only
+on:
+  workflow_dispatch:
+
+jobs:
+  send-onboarding:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Welcome beacon
+        run: |
+          curl -X POST "https://discord.com/api/v9/channels/${{ secrets.DISCORD_CHANNEL_ID_ONBOARDING }}/messages" \
+          -H "Authorization: Bot ${{ secrets.DISCORD_BOT_TOKEN }}" \
+          -H "Content-Type: application/json" \
+          -d '{"content":"👋 Welcome to the UNIQUECOIN Portal! You’ve stepped into a sovereign signal engine."}'
+
+      - name: Vision statement
+        run: |
+          curl -X POST "https://discord.com/api/v9/channels/${{ secrets.DISCORD_CHANNEL_ID_ONBOARDING }}/messages" \
+          -H "Authorization: Bot ${{ secrets.DISCORD_BOT_TOKEN }}" \
+          -H "Content-Type: application/json" \
+          -d '{"content":"🌍 Our mission: onboarding believers into KingdomFlow — a civilization of faith‑driven platforms."}'
+
+      - name: First steps
+        run: |
+          curl -X POST "https://discord.com/api/v9/channels/${{ secrets.DISCORD_CHANNEL_ID_ONBOARDING }}/messages" \
+          -H "Authorization: Bot ${{ secrets.DISCORD_BOT_TOKEN }}" \
+          -H "Content-Type: application/json" \
+          -d '{"content":"✅ Please read the onboarding guide in #resources.\n✅ Introduce yourself in #introductions.\n✅ Claim your role in #roles."}'
+
+      - name: Encouragement
+        run: |
+          curl -X POST "https://discord.com/api/v9/channels/${{ secrets.DISCORD_CHANNEL_ID_ONBOARDING }}/messages" \
+          -H "Authorization: Bot ${{ secrets.DISCORD_BOT_TOKEN }}" \
+          -H "Content-Type: application/json" \
+          -d '{"content":"✨ Every click is a mutation. Every step is a testimony. You are part of the signal."}'
