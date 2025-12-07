@@ -1,0 +1,24 @@
+📜 KINGDOMFLOW CODING RITUAL — GIT CHEAT‑SHEET 📜
+
+🔄 Step 1: Clone the Repo (first time only)
+git clone https://github.com/UNIQUECOIN/kingdomflow-bot.git
+cd kingdomflow-bot
+
+✍️ Step 2: Make Changes
+# Edit files locally (index.js, commands, etc.)
+
+➕ Step 3: Stage Changes
+git add .
+
+💬 Step 4: Commit Changes
+git commit -m "describe your update here"
+
+📤 Step 5: Push to GitHub
+git push origin main
+
+🚀 Step 6: Railway Redeploys Automatically
+Every push → Railway pulls latest code → redeploys bot.
+
+✅ Step 7: Verify
+Check Railway logs for "Logged in as <botname>"
+Test in Discord: !ping → 🏓 Pong!
