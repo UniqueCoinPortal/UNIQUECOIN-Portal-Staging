@@ -1,0 +1,71 @@
+name: Discord Master Workflow
+on:
+  schedule:
+    # Onboarding reminder every Monday at 09:00 UTC
+    - cron: "0 9 * * MON"
+    # Announcements every Friday at 12:00 UTC
+    - cron: "0 12 * * FRI"
+  workflow_dispatch:  # still allows manual trigger
+
+jobs:
+  send-onboarding-reminder:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Welcome beacon
+        run: |
+          curl -X POST "https://discord.com/api/v9/channels/${{ secrets.DISCORD_CHANNEL_ID_ONBOARDING }}/messages" \
+          -H "Authorization: Bot ${{ secrets.DISCORD_BOT_TOKEN }}" \
+          -H "Content-Type: application/json" \
+          -d '{"content":"👋 Welcome to the UNIQUECOIN Portal! You’ve stepped into a sovereign signal engine."}'
+
+      - name: Vision statement
+        run: |
+          curl -X POST "https://discord.com/api/v9/channels/${{ secrets.DISCORD_CHANNEL_ID_ONBOARDING }}/messages" \
+          -H "Authorization: Bot ${{ secrets.DISCORD_BOT_TOKEN }}" \
+          -H "Content-Type: application/json" \
+          -d '{"content":"🌍 Our mission: onboarding believers into KingdomFlow — a civilization of faith‑driven platforms."}'
+
+      - name: First steps
+        run: |
+          curl -X POST "https://discord.com/api/v9/channels/${{ secrets.DISCORD_CHANNEL_ID_ONBOARDING }}/messages" \
+          -H "Authorization: Bot ${{ secrets.DISCORD_BOT_TOKEN }}" \
+          -H "Content-Type: application/json" \
+          -d '{"content":"✅ Please read the onboarding guide in #resources.\n✅ Introduce yourself in #introductions.\n✅ Claim your role in #roles."}'
+
+      - name: Encouragement
+        run: |
+          curl -X POST "https://discord.com/api/v9/channels/${{ secrets.DISCORD_CHANNEL_ID_ONBOARDING }}/messages" \
+          -H "Authorization: Bot ${{ secrets.DISCORD_BOT_TOKEN }}" \
+          -H "Content-Type: application/json" \
+          -d '{"content":"✨ Every click is a mutation. Every step is a testimony. You are part of the signal."}'
+
+  send-announcements:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Recruitment call
+        run: |
+          curl -X POST "https://discord.com/api/v9/channels/${{ secrets.DISCORD_CHANNEL_ID_ANNOUNCEMENTS }}/messages" \
+          -H "Authorization: Bot ${{ secrets.DISCORD_BOT_TOKEN }}" \
+          -H "Content-Type: application/json" \
+          -d '{"content":"📢 UNIQUECOIN is recruiting! We seek believers in tech, media, and ministry. Apply via #applications."}'
+
+      - name: Milestone update
+        run: |
+          curl -X POST "https://discord.com/api/v9/channels/${{ secrets.DISCORD_CHANNEL_ID_ANNOUNCEMENTS }}/messages" \
+          -H "Authorization: Bot ${{ secrets.DISCORD_BOT_TOKEN }}" \
+          -H "Content-Type: application/json" \
+          -d '{"content":"🚀 Mutation achieved: Discord integration complete. The bot now speaks in #onboarding and #announcements."}'
+
+      - name: Event alert
+        run: |
+          curl -X POST "https://discord.com/api/v9/channels/${{ secrets.DISCORD_CHANNEL_ID_ANNOUNCEMENTS }}/messages" \
+          -H "Authorization: Bot ${{ secrets.DISCORD_BOT_TOKEN }}" \
+          -H "Content-Type: application/json" \
+          -d '{"content":"📅 Join us this Friday for a KingdomFlow workshop. Details in #events."}'
+
+      - name: Inspirational signal
+        run: |
+          curl -X POST "https://discord.com/api/v9/channels/${{ secrets.DISCORD_CHANNEL_ID_ANNOUNCEMENTS }}/messages" \
+          -H "Authorization: Bot ${{ secrets.DISCORD_BOT_TOKEN }}" \
+          -H "Content-Type: application/json" \
+          -d '{"content":"🔥 The civilization grows. Each testimony is viral. Each believer is sovereign."}'
