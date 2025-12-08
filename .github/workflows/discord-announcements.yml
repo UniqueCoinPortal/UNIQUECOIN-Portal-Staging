@@ -1,0 +1,38 @@
+name: Discord Scheduled Announcements
+on:
+  schedule:
+    # Runs every Friday at 12:00 UTC
+    - cron: "0 12 * * FRI"
+  workflow_dispatch:  # still allows manual trigger
+
+jobs:
+  send-announcements:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Recruitment call
+        run: |
+          curl -X POST "https://discord.com/api/v9/channels/${{ secrets.DISCORD_CHANNEL_ID_ANNOUNCEMENTS }}/messages" \
+          -H "Authorization: Bot ${{ secrets.DISCORD_BOT_TOKEN }}" \
+          -H "Content-Type: application/json" \
+          -d '{"content":"📢 UNIQUECOIN is recruiting! We seek believers in tech, media, and ministry. Apply via #applications."}'
+
+      - name: Milestone update
+        run: |
+          curl -X POST "https://discord.com/api/v9/channels/${{ secrets.DISCORD_CHANNEL_ID_ANNOUNCEMENTS }}/messages" \
+          -H "Authorization: Bot ${{ secrets.DISCORD_BOT_TOKEN }}" \
+          -H "Content-Type: application/json" \
+          -d '{"content":"🚀 Mutation achieved: Discord integration complete. The bot now speaks in #onboarding and #announcements."}'
+
+      - name: Event alert
+        run: |
+          curl -X POST "https://discord.com/api/v9/channels/${{ secrets.DISCORD_CHANNEL_ID_ANNOUNCEMENTS }}/messages" \
+          -H "Authorization: Bot ${{ secrets.DISCORD_BOT_TOKEN }}" \
+          -H "Content-Type: application/json" \
+          -d '{"content":"📅 Join us this Friday for a KingdomFlow workshop. Details in #events."}'
+
+      - name: Inspirational signal
+        run: |
+          curl -X POST "https://discord.com/api/v9/channels/${{ secrets.DISCORD_CHANNEL_ID_ANNOUNCEMENTS }}/messages" \
+          -H "Authorization: Bot ${{ secrets.DISCORD_BOT_TOKEN }}" \
+          -H "Content-Type: application/json" \
+          -d '{"content":"🔥 The civilization grows. Each testimony is viral. Each believer is sovereign."}'
