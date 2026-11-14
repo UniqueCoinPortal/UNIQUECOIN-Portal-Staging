@@ -1,14 +1,14 @@
 [
   {
-    "name": "Jones",
-    "role": "Founder and Orchestrator"
-  },
-  {
     "name": "Amina",
     "role": "Liquidity Architect"
   },
   {
     "name": "Kwame",
     "role": "Rotation Engineer"
+  },
+  {
+    "name": "Jones",
+    "role": "Founder and Orchestrator"
   }
 ]
